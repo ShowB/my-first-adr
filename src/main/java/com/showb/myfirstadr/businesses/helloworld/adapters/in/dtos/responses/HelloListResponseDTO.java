@@ -28,7 +28,7 @@ public record HelloListResponseDTO(
             String value,
             String extraData
     ) {
-        public static Hello from(com.showb.myfirstadr.businesses.helloworld.applications.domain.Hello from) {
+        public static Hello from(com.showb.myfirstadr.businesses.helloworld.applications.domain.primary.Hello from) {
             return Hello.builder()
                     .id(from.id())
                     .key(from.key())

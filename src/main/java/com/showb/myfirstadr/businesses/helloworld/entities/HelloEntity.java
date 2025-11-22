@@ -1,7 +1,6 @@
 package com.showb.myfirstadr.businesses.helloworld.entities;
 
-import com.showb.myfirstadr.businesses.helloworld.applications.domain.Hello;
-import com.showb.myfirstadr.businesses.helloworld.applications.domain.HelloPostRequest;
+import com.showb.myfirstadr.businesses.helloworld.applications.domain.primary.Hello;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.annotation.Id;
@@ -30,8 +29,9 @@ public class HelloEntity {
         this.createdAt = createdAt;
     }
 
-    public static HelloEntity from(HelloPostRequest from) {
+    public static HelloEntity from(Hello from) {
         return HelloEntity.builder()
+                .id(from.id())
                 .key(from.key())
                 .value(from.value())
                 .extraData(from.extraData())
