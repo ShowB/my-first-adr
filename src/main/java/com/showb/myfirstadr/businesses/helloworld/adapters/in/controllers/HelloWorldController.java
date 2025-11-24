@@ -7,7 +7,7 @@ import com.showb.myfirstadr.businesses.helloworld.adapters.in.dtos.responses.Hel
 import com.showb.myfirstadr.businesses.helloworld.applications.domain.HelloListResponse;
 import com.showb.myfirstadr.businesses.helloworld.applications.domain.primary.Hello;
 import com.showb.myfirstadr.businesses.helloworld.ports.in.HelloUseCase;
-import lombok.NonNull;
+import org.jspecify.annotations.NonNull;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
